@@ -32,16 +32,16 @@ function Singup() {
   }
 
   try {
-const url = "https://mern-auth-app-oj1e.onrender.com/signup";
-
-    const response = await fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(signupInfo)
-    });
-
+const response = await fetch(
+  "https://mern-auth-app-oj1e.onrender.com/api/signup",
+  {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(signupInfo)
+  }
+);
     const result = await response.json();
     const { success, message, error } = result;
 
