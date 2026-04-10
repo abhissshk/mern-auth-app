@@ -36,7 +36,7 @@ const handleLogin = async (e) => {
 
   try {
 
-const url = "https://your-backend.onrender.com/api/login";
+const url = "https://mern-auth-app-oj1e.onrender.com/api/login"; 
 
 const response = await fetch(url, {
   method: "POST",
@@ -63,11 +63,12 @@ const response = await fetch(url, {
       handleError(message);
     }
 
-    console.log(result);
+    // console.log(result);
 
   } catch (error) {
     handleError(error.message);
     console.log(error);
+      console.error("Not JSON:");
   }
 };
   return (
