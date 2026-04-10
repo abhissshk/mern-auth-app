@@ -35,15 +35,16 @@ const handleLogin = async (e) => {
   }
 
   try {
-const url = "https://your-backend.onrender.com/api";
 
-    const response = await fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(LoginInfo)
-    });
+const url = "https://your-backend.onrender.com/api/login";
+
+const response = await fetch(url, {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify(LoginInfo)
+});
 
     const result = await response.json();
     const { success, message, error, user, jwtToken } = result;

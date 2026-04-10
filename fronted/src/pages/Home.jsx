@@ -31,7 +31,7 @@ function Home() {
   const fetchProducts=async()=>{
     try{
 
-const url = "https://your-backend.onrender.com/api";
+const url = "https://your-backend.onrender.com/products";
 
       const headers={
         "Authorization" : localStorage.getItem('token')

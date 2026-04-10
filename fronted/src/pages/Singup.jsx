@@ -32,7 +32,7 @@ function Singup() {
   }
 
   try {
-  const url = "https://your-backend.onrender.com/api";
+const url = "https://your-backend.onrender.com/api/signup";
 
     const response = await fetch(url, {
       method: "POST",
