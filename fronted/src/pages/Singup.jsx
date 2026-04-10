@@ -32,7 +32,7 @@ function Singup() {
   }
 
   try {
-    const url = "http://localhost:3000/api/signup";
+    const url = "https://mern-auth-app-oj1e.onrender.com";
 
     const response = await fetch(url, {
       method: "POST",

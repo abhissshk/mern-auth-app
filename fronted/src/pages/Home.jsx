@@ -31,7 +31,7 @@ function Home() {
   const fetchProducts=async()=>{
     try{
 
-      const url="http://localhost:3000/products";
+      const url="https://mern-auth-app-oj1e.onrender.com";
 
       const headers={
         "Authorization" : localStorage.getItem('token')
